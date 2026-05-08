@@ -61,6 +61,18 @@ nav {
   text-transform: uppercase;
 }
 
+@media (max-width: 768px) {
+  .nav-logo-text {
+    display: none;
+  }
+}
+
+@media (min-width: 769px) {
+  .hero-motto {
+    display: none;
+  }
+}
+
 .nav-links {
   display: flex;
   gap: 2rem;
