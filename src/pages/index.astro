@@ -85,11 +85,10 @@ import '../styles/global.css';
       <p style="margin-top:0.5rem;">aikaitech.com | hello@aikaitech.com</p>
       <div class="contact-form">
         <h3>Get in Touch</h3>
-        <form action="https://formsubmit.co/elliot.kryksman@gmail.com" method="POST" class="form-inline">
+        <form name="contact" method="POST" data-netlify="true" class="form-inline">
           <input type="text" name="name" placeholder="Your name" required />
           <input type="email" name="email" placeholder="Your email" required />
           <textarea name="message" placeholder="How can we help?" rows="4" required></textarea>
-          <input type="hidden" name="_subject" value="AIkai inquiry from" />
           <button type="submit" class="btn btn-primary">Send Message</button>
         </form>
       </div>
