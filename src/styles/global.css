@@ -48,7 +48,7 @@ nav {
 }
 
 .nav-logo img {
-  height: 40px;
+  height: 70px;
   width: auto;
 }
 
@@ -64,6 +64,9 @@ nav {
 @media (max-width: 768px) {
   .nav-logo-text {
     display: none;
+  }
+  .hero-motto {
+    display: block;
   }
 }
 
