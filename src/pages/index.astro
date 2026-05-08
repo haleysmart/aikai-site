@@ -85,13 +85,32 @@ import '../styles/global.css';
       <p style="margin-top:0.5rem;">aikaitech.com | hello@aikaitech.com</p>
       <div class="contact-form">
         <h3>Get in Touch</h3>
-        <form name="contact" method="POST" data-netlify="true" class="form-inline">
+        <form name="contact" id="contact-form" class="form-inline">
           <input type="text" name="name" placeholder="Your name" required />
           <input type="email" name="email" placeholder="Your email" required />
           <textarea name="message" placeholder="How can we help?" rows="4" required></textarea>
           <button type="submit" class="btn btn-primary">Send Message</button>
         </form>
+        <div id="form-success" style="display:none; margin-top:1.5rem; text-align:center;">
+          <p style="color: var(--blue-bright); font-size:1.1rem; font-weight:600;">Message sent! We'll be in touch soon.</p>
+          <button type="button" onclick="document.getElementById('contact-form').reset(); document.getElementById('form-success').style.display='none'; document.getElementById('contact-form').style.display='flex';" class="btn btn-outline" style="margin-top:1rem;">Send Another</button>
+        </div>
       </div>
     </footer>
+    <script>
+      const form = document.getElementById('contact-form');
+      const successMsg = document.getElementById('form-success');
+      form.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const data = new FormData(form);
+        try {
+          await fetch('/', { method: 'POST', body: data });
+          form.style.display = 'none';
+          successMsg.style.display = 'block';
+        } catch (err) {
+          alert('Something went wrong. Please try again.');
+        }
+      });
+    </script>
   </body>
 </html>
