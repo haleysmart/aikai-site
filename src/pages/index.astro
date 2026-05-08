@@ -1,0 +1,98 @@
+---
+import '../styles/global.css';
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="AIkai - It starts and ends with AI. Building intelligent solutions for tomorrow." />
+    <link rel="icon" type="image/png" href="/logo.png" />
+    <title>AIkai - It starts and ends with AI</title>
+  </head>
+  <body>
+    <nav>
+      <a href="/" class="nav-logo" aria-label="AIkai home">
+        <img src="/logo-nav.png" alt="AIkai" />
+        <span class="nav-logo-text">It starts and ends with AI.</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <section class="hero">
+      <div class="hero-header">
+        <img src="/logo.png" alt="AIkai" class="hero-logo" />
+      </div>
+      <h1>Intelligence,<br />Architected.</h1>
+      <p class="hero-desc">
+        AIkai builds AI-native products and infrastructure -- from intelligent automation
+        to enterprise-grade systems. We turn complex data into decisive action.
+      </p>
+      <div class="hero-cta">
+        <a href="#products" class="btn btn-primary">Explore Products</a>
+        <a href="#contact" class="btn btn-outline">Get in Touch</a>
+      </div>
+    </section>
+
+    <section class="blueprint" id="about">
+      <h2>What We Build</h2>
+      <div class="grid">
+        <div class="card">
+          <div class="card-icon">&#128202;</div>
+          <h3>AI Analytics</h3>
+          <p>Real-time data pipelines and ML-powered insights for financial and enterprise workflows -- turning complexity into clarity.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">&#9889;</div>
+          <h3>Intelligent Automation</h3>
+          <p>Rule Engines + GenAI to automate repetitive decisions at scale -- without sacrificing precision.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">&#128736;</div>
+          <h3>Custom Systems</h3>
+          <p>End-to-end build-outs: from architecture design to production deployment and monitoring.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="blueprint" id="products">
+      <h2>Platform</h2>
+      <div class="grid">
+        <div class="card">
+          <div class="card-icon">&#129302;</div>
+          <h3>AIkai Platform</h3>
+          <p>Coming soon -- a unified platform for deploying, monitoring, and iterating on AI models in production.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">&#129504;</div>
+          <h3>AIkai API</h3>
+          <p>Structured APIs for integrating AI decision-making into existing systems -- REST + event-driven.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">&#128230;</div>
+          <h3>AIkai Studio</h3>
+          <p>A no-code/low-code environment for subject-matter experts to build and tune AI workflows.</p>
+        </div>
+      </div>
+    </section>
+
+    <footer id="contact">
+      <p><span>aikai</span> -- It starts and ends with AI</p>
+      <p style="margin-top:0.5rem;">aikaitech.com | hello@aikaitech.com</p>
+      <div class="contact-form">
+        <h3>Get in Touch</h3>
+        <form action="https://formsubmit.co/elliot.kryksman@gmail.com" method="POST" class="form-inline">
+          <input type="text" name="name" placeholder="Your name" required />
+          <input type="email" name="email" placeholder="Your email" required />
+          <textarea name="message" placeholder="How can we help?" rows="4" required></textarea>
+          <input type="hidden" name="_subject" value="AIkai inquiry from" />
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+      </div>
+    </footer>
+  </body>
+</html>
