@@ -61,24 +61,6 @@ nav {
   text-transform: uppercase;
 }
 
-@media (max-width: 768px) {
-  .nav-logo-text {
-    display: none;
-  }
-  .hero {
-    padding-top: 1rem;
-  }
-  .hero-motto {
-    display: block;
-  }
-}
-
-@media (min-width: 769px) {
-  .hero-motto {
-    display: none;
-  }
-}
-
 .nav-links {
   display: flex;
   gap: 2rem;
@@ -140,6 +122,24 @@ nav {
   font-weight: 500;
   letter-spacing: 0.08em;
   text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+  .nav-logo-text {
+    display: none;
+  }
+  body .hero {
+    padding: 1rem 2rem 6rem;
+  }
+  .hero-motto {
+    display: block;
+  }
+}
+
+@media (min-width: 769px) {
+  .hero-motto {
+    display: none;
+  }
 }
 
 .hero h1 {
